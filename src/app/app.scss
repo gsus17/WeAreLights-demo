@@ -1,0 +1,55 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
+$SIDEMENU_TOP: #d6244d;
+$SIDEMENU_BOTTOM: #631aad;
+$SIDEMENU_TRANSPARENCY: #ba238c;
+
+.side-menu-gradient{
+    background: -webkit-gradient($SIDEMENU_TOP,$SIDEMENU_TRANSPARENCY, $SIDEMENU_BOTTOM);
+    background: -o-linear-gradient($SIDEMENU_TOP,$SIDEMENU_TRANSPARENCY, $SIDEMENU_BOTTOM);
+    background: -moz-linear-gradient( $SIDEMENU_TOP, $SIDEMENU_TRANSPARENCY,$SIDEMENU_BOTTOM);
+    background: linear-gradient($SIDEMENU_TOP,$SIDEMENU_TRANSPARENCY, $SIDEMENU_BOTTOM);
+}
+
+.header-md::after {
+    background: none !important;
+}
+
+*  {
+    font-family: 'Monoton', cursive !important ;
+}
+
+.item-md.item-block .item-inner {
+    border-bottom: none !important;
+}
+
+.toolbar-background-md {
+    background-color: #c7236f !important;
+    color: white !important;
+}
+
+.toolbar-title-md {
+    color: white !important;
+}
+
+.gradient-cont {
+    background-color: #c7236f !important;
+    color: white;
+}
