@@ -2,7 +2,7 @@
   <img src="assets/imgs/header.png" alt="">
 </ion-header>
 
-
+<!-- 
 <ion-content>
   <ion-content padding>
     <ion-grid>
@@ -14,3 +14,18 @@
     </ion-grid>
   </ion-content>
 </ion-content>
+ -->
+ <ion-content>
+    <ion-content padding>
+      <ion-grid>
+        <ion-row center text-center>
+          <ion-col col-12>
+            <span class="labels"> Compartí con tus contactos la info de esta aplicación</span>
+          </ion-col>
+          <ion-col col-12>
+              <button ion-button full (click)='share()' class="share-button">Compartir</button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-content>
+  </ion-content>
